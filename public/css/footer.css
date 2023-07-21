@@ -1,0 +1,26 @@
+/* Estilos para el footer */
+footer {
+    background-color: #03264C;
+    color: #ebebeb;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  footer section {
+    margin-bottom: 20px;
+  }
+  
+  footer h4 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
+  footer p {
+    margin-bottom: 10px;
+  }
+  
+  /* Estilos para los íconos en el footer */
+  footer i {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }

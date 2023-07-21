@@ -1,0 +1,105 @@
+/* Estilos para el producto */
+.product {
+  /* position: relative; --> reemplazado por flexbox */
+  text-align: left;
+}
+
+/* Estilos adicionales para el contenedor del producto */
+.product .product-box {
+  border-top: 1px solid #ebebeb;
+  padding: 15px;
+  margin: 10px;
+  position: relative;
+}
+
+/* Estilos para el main */
+main {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* Estilos para la separación entre los artículos, eliminado por flexbox
+article {
+  margin-bottom: 10px;
+} */
+
+main section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Estilos para el descuento */
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+article {
+  display: flex;
+  margin-bottom: 10px;
+  /* Ajuste para que los productos ocupen el ancho deseado en desktop */
+  flex: 1 1 25%;
+  max-width: 25%;
+}
+
+/* Estilos para el precio y el descuento */
+.price-discount-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.price-discount-container p {
+  margin: 0;
+  padding-right: 5px;
+  width: 30%;
+}
+
+/* Icono */
+main section article i {
+  display: block;
+  font-size: 16px;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #39b54a;
+  background-color: #FFF;
+  border-radius: 50%;
+  position: absolute;
+  right: 20px;
+  bottom: 45px;
+}
+
+/* Estilos para el descuento */
+.descuentos {
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  color: #8eb89a;
+  width: 30%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  position: relative;
+}
+
+/* Estilos para el precio */
+.precios {
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+  width: 70%; /* Ocupa el 30% del contenedor */
+}
+
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.titulares {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}

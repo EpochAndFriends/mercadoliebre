@@ -1,0 +1,166 @@
+/* Estilos para dispositivos móviles */
+@media (max-width: 360px) {
+  .lupa2 {
+    display: none;
+  }
+  .header-content p {
+    display: none;
+  }
+  .descripciones {
+    display: none;
+  }
+
+  
+  nav {
+    display: none;
+  }
+}
+
+/* Estilos para tablets y pantallas más grandes */
+@media (min-width: 361px) {
+
+  /* Lupa1 oculta, Lupa2 visible */
+  .lupa1 {
+    display: none;
+  }
+  .lupa2 {
+    display: inline-block;
+  }
+  .libre {
+    display: none;
+  }
+
+    nav {
+      display: flex;
+      padding: 0 20px; /* Agregamos un espaciado lateral para separar los menús */
+      margin-bottom: 10px; /* Ajustamos el margen inferior */
+    }
+
+
+
+    /* Ajuste para que los productos ocupen el ancho deseado en tablets (2 productos por fila) */
+    article {
+      flex: 1 1 50%;
+      max-width: 50%;
+    }
+
+    .burger-menu {
+      display: none;
+    }
+    
+    /* Ajuste para que los productos ocupen el ancho deseado en pantallas de escritorio (4 productos por fila) */
+    article {
+      flex: 1 1 25%;
+      max-width: 25%;
+    }
+    .product {
+      box-shadow: 0px 0px 15px rgb(100, 100, 100);
+    }
+
+      .burger-menu {
+    display: none;
+  }
+
+  /* Estilos para el lado izquierdo del menú */
+  .left-menu {
+    display: flex;
+    align-items: center; /* Centramos verticalmente los elementos */
+    margin-right: auto; /* Empujamos la lista al extremo izquierdo */
+
+  } 
+
+  .left-menu ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: flex-start; /* Alineamos los elementos al inicio */
+  }
+
+  /* Estilos para el lado derecho del menú */
+  .right-menu {
+    display: flex;
+    align-items: center; /* Centramos verticalmente los elementos */
+    margin-left: auto; /* Empujamos la lista al extremo derecho */
+
+  }
+
+  .right-menu ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: flex-end; /* Alineamos los elementos al final */
+  }
+
+  
+}
+
+  .left-menu li,
+  .right-menu li {
+    white-space: nowrap;
+  }  
+
+
+  /* Ajuste para que los productos ocupen el ancho deseado en tablets (2 productos por fila) */
+@media (min-width: 481px) and (max-width: 768px) {
+  article {
+    flex: 1 1 48%;
+    max-width: 48%;
+  }
+
+    /* Estilos para el logo */
+    header img {
+      width: 25%; /* Reducimos el ancho máximo del logo en pantallas más pequeñas */
+    }
+  
+    /* Estilos para el search bar */
+    .search-bar {
+      width: 25%; /* Ajustamos el ancho al 70% del contenedor en pantallas más pequeñas */
+    }
+
+/* Ajuste para la clase "header-content p" */
+.header-content p {
+  display: flex;
+  color: #03264C;
+  white-space: nowrap;
+  width: 20%;
+  margin-top: -25px; /* Ajustar el valor para ubicar el elemento p en la posición deseada */
+  transform: translateX(200px); /* Ajustar el valor para desplazar el elemento hacia la derecha */
+}
+
+}
+
+/* Ajuste para que los productos ocupen el ancho completo en dispositivos móviles (1 producto por fila) */
+@media (max-width: 480px) {
+  article {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
+
+/* Estilos para pc exclusivamente */
+@media (min-width: 1000px) {
+
+  /* Estilos para el logo */
+  header img {
+    width: 30%; /* Reducimos el ancho máximo del logo en pantallas más pequeñas */
+  }
+
+  /* Estilos para el search bar */
+  .search-bar {
+    width: 30%; /* Ajustamos el ancho al 70% del contenedor en pantallas más pequeñas */
+  }
+
+  /* Ajuste para la clase "header-content p" */
+  .header-content p {
+    display: flex;
+    align-self: flex-end;
+    white-space: nowrap;
+    width: auto; /* Ajustar el ancho automáticamente para que se ajuste al contenido */
+    margin-top: -25px; /* Ajustar el valor para ubicar el elemento p en la posición deseada */
+    transform: translateX(100%); /* Ajustar el valor para desplazar el elemento hacia la derecha */
+    padding-left: 50px;
+  }
+}
+

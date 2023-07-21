@@ -1,0 +1,131 @@
+/* Estilos para el navbar */
+nav {
+  background-color: #EAC926;
+  display: none; /* Ocultamos la lista en dispositivos móviles */
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  margin-left: 15px;
+}
+
+nav a {
+  color: #03264C;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #1259c3;
+}
+
+/* Estilos para el login bar */
+p.fa-hand-holding-dollar {
+  color: #666;
+  font-size: 16px;
+}
+
+/* Estilos para el search bar */
+.search-bar {
+  position: relative;
+  width: 40%; /* Ajustamos el ancho al 50% del contenedor */
+}
+
+input[type="text"] {
+  background-color: #ebebeb;
+  color: #03264C;
+  border: none;
+  border-radius: 4px;
+  padding: 6px 30px 6px 10px; /* Ajustamos el padding para dejar espacio para el icono */
+  font-size: 12px;
+  width: 100%; /* Ajustamos el ancho al 100% para que ocupe todo el contenedor */
+}
+
+/* Estilos para el icono de lupa */
+.fa-magnifying-glass.icon {
+  position: absolute;
+  right: 10px; /* Ajustamos la posición del icono a la derecha */
+  top: 50%;
+  transform: translateY(-50%); /* Centramos verticalmente el icono */
+}
+
+/* Estilos para el header */
+header {
+  background-color: #EAC926;
+  display: flex;
+  flex-direction: column; /* Ajustamos la dirección a columna para que estén en líneas separadas */
+  padding: 10px; /* Agregamos un poco de espacio entre los elementos */
+}
+
+/* Estilos para el contenedor del logo y la barra de búsqueda */
+.header-content {
+  display: flex;
+  align-items: center; /* Centramos verticalmente los elementos */
+  width: 100%; /* Aseguramos que el contenedor ocupe todo el ancho del header */
+  margin-bottom: 10px; /* Agregamos un margen inferior para separar del párrafo siguiente */
+}
+
+/* Estilos para el menu hamburguesa */
+.burger-menu {
+  background-color: #03264C;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20%;
+  margin-top: 10px; /* Ajustamos el margen superior */
+  margin-left: auto; /* Agregamos margen izquierdo automático para centrar el menú */
+  margin-right: auto; /* Agregamos margen derecho automático para centrar el menú */
+}
+
+.burger-menu .fa-bars {
+  color: #ebebeb;
+}
+
+
+.burger-menu .fa-bars {
+  color: #ebebeb;
+}
+
+/* Ajuste para que el texto esté centrado */
+header p {
+  text-align: center;
+}
+
+/* Estilos para el logo */
+header img {
+  width: 50%; /* Ajustamos el ancho al 50% del contenedor */
+}
+
+/* Estilos para el icono de lupa2 */
+.lupa2 {
+  position: sticky;
+  right: -30px;
+  top: 4%;
+  transform: translateY(-50%); /* Centramos verticalmente el icono */
+  background-color: #fff; /* Fondo blanco para el botón */
+  padding: 6px; /* Ajustamos el padding para darle espacio al icono */
+  border-radius: 4px; /* Agregamos bordes redondeados para el botón */
+  cursor: pointer; /* Cambiamos el cursor al pasar sobre el botón */
+  display: none; /* Ocultamos el icono de lupa2 por defecto */
+}
+
+.lupa2 .fa-magnifying-glass {
+  color: #03264C; /* Color del icono de lupa2 */
+}
+
+
+/* Ajuste para la clase "header-content p" */
+
+
+
+
+@media (min-width: 768px) {
+
+}

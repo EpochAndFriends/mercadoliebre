@@ -1,0 +1,35 @@
+/* Estilos generales */
+body {
+    background-color: #ebebeb;
+    font-family: 'Roboto', sans-serif;
+  }
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+
+  /* Estilos adicionales para titulares, precios, descuentos y descripciones */
+h2.titulares {
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  p.precios {
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  p.descuentos {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    color: #8eb89a;
+    padding-left: 20px;
+    white-space: nowrap;
+  }
+
+  p.descripciones {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+  }
