@@ -1,7 +1,22 @@
+/* Estilos para el div "banner" */
+.banner {
+  width: 115%; /* Utiliza todo el ancho de la pantalla */
+  height: auto;
+  transform: translateX(-25px);
+}
+
+.banner img {
+  width: 100%; /* La imagen ocupa todo el ancho del div */
+  height: 100%; /* La imagen ocupa toda la altura del div */
+}
+
+
+
 /* Estilos para el navbar */
 nav {
   background-color: #EAC926;
   display: none; /* Ocultamos la lista en dispositivos móviles */
+  width: auto;
 }
 
 nav ul {

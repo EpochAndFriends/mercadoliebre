@@ -1,7 +1,14 @@
 /* Estilos generales */
+
+main {
+  min-height: calc(60vh - 40px); /* esto evita que el footer se pegue al contenido del main y genere un espacio en blanco sin ocupar*/
+  padding-bottom: 60px;  /* esto evita que el contenido del main se superponga con el del footer, en caso de que main no tenga suficiente contenido*/
+}
+
 body {
     background-color: #ebebeb;
     font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;  /* para que el banner ocupe toda la pantalla, le puse un % mayor a 100% de ancho, y esto genera el efecto deseado pero tambien crea un espacio en blanco a la derecha de la pagina*/
   }
 
 * {
