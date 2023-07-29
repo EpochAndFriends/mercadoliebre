@@ -23,4 +23,5 @@ footer {
   footer i {
     font-size: 2em;
     margin-bottom: 10px;
+    transition: color 0.3s ease;
   }
