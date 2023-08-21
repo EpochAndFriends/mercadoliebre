@@ -1,28 +1,43 @@
 const express = require('express');
 const app = express();
 const path = require('path');
-const port = 3030;
+const port = 3000;
+const indexRouter = require('./src/routes/index');
+const usersRouter = require('./src/routes/users');
 
-app.use(express.static('public'));
+app.set('view engine', 'ejs');
+app.set('views', path.join(__dirname, 'src', 'views'));
 
-app.get("/home", (req, res) =>
-  res.sendFile(path.join(__dirname, "views", "home.html"))
+app.use(express.static(path.join(__dirname, 'public')));
+app.use('/', indexRouter);
+app.use('/users', usersRouter);
+
+app.get("/", (req, res) =>
+  res.render("index")
 );
 
-// Ruta para la página de registro de usuario
 app.get("/register", (req, res) =>
-  res.sendFile(path.join(__dirname, "views", "register.html"))
+  res.render("register")
 );
 
-// Ruta para la página de inicio de sesión
 app.get("/login", (req, res) =>
-  res.sendFile(path.join(__dirname, "views", "login.html"))
+  res.render("login")
 );
+
+const multer = require('multer');
+const storage = multer.diskStorage({
+  destination: (req, file, cb) => {
+    cb(null, 'public/images');
+  },
+  filename: (req, file, cb) => {
+    cb(null, file.originalname);
+  },
+});
+const upload = multer({ storage });
+
+app.post("/upload", upload.single("photo"), (req, res) => {
+});
 
 app.listen(port, () => {
   console.log(`Servidor escuchando en el puerto ${port}`);
 });
-
-app.post("/home", (req, res) => 
-res.sendFile(path.join(__dirname, "views", "home.html"))
-);
